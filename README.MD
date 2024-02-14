@@ -18,7 +18,7 @@ This project implements a mortgage plan calculator that reads prospect informati
 4. Run the following command to build the project and execute the main program:
 
 ```bash
-mvn clean install
+mvn clean package
 ```
 
 This will compile the code, read prospect information from `prospects.txt`, calculate monthly payments, and display the details for each prospect.
