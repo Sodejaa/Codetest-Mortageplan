@@ -35,7 +35,7 @@ This will compile the code, run unit tests, and report the results.
 
 ## Docker setup and usage
 
-#### Building the Docker image
+#### Building the Docker image:
 
 Ensure that Docker is installed and configured on your system.
 
@@ -49,7 +49,7 @@ docker build -t mortage-plan .
 
 This command will build a Docker image named mortgage-plan based on the specifications in the Dockerfile.
 
-#### Running the Docker Container
+#### Running the Docker Container:
 
 Once the Docker image is built successfully, you can run it using the following command:
 
