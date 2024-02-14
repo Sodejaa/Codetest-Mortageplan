@@ -59,6 +59,10 @@ docker run mortage-plan
 This command will start a Docker container based on the mortgage-plan image, executing
 the mortgage plan calculator application within the container.
 
+## Running in IDE
+
+In IDE build and Run `MortagePlan.java` located in: `src/main/java/MortagePlan.java`
+
 ## Dependencies
 
 This project uses the following dependencies:
