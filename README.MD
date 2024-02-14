@@ -15,7 +15,7 @@ This project implements a mortgage plan calculator that reads prospect informati
 1. Make sure you have Maven installed and configured on your system.
 2. Clone or download the project repository.
 3. Open a terminal window and navigate to the project directory.
-4. Run the following command to build the project and execute the main program:
+4. Run the following command to build the project:
 
 ```bash
 mvn clean install
@@ -23,19 +23,9 @@ mvn clean install
 
 This will compile the code, read prospect information from `prospects.txt`, calculate monthly payments, and display the details for each prospect.
 
-## File Format
+## Testing
 
-The `prospects.txt` file should contain information about each prospect in the following format:
-
-
-`Name,LoanAmount,InterestRate,Years`
-
-
-Each line represents a single prospect, with values separated by commas.
-
-## Building and Testing
-
-To build the project and run tests, use the following command:
+Run tests, use the following command:
 
 ```bash
 mvn clean test
@@ -43,11 +33,45 @@ mvn clean test
 
 This will compile the code, run unit tests, and report the results.
 
+## Docker setup and usage
+
+### Building the Docker image
+
+Ensure that Docker is installed and configured on your system.
+
+Navigate to the root directory of the project where the Dockerfile is located.
+
+Execute the following command to build the Docker image:
+
+```bash
+docker build -t mortage-plan .
+```
+
+This command will build a Docker image named mortgage-plan based on the specifications in the Dockerfile.
+
+### Running the Docker Container
+
+Once the Docker image is built successfully, you can run it using the following command:
+
+```bash
+docker run mortage-plan
+```
+This command will start a Docker container based on the mortgage-plan image, executing
+the mortgage plan calculator application within the container.
+
 ## Dependencies
 
 This project uses the following dependencies:
 
 - JUnit Jupiter (for unit testing)
+
+## File Format
+
+The `prospects.txt` file should contain information about each prospect in the following format:
+
+`Name,LoanAmount,InterestRate,Years`
+
+Each line represents a single prospect, with values separated by commas.
 
 ## Additional Notes
 
