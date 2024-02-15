@@ -42,7 +42,7 @@ public class ProspectParser {
         return prospects; // Return the list of prospects
     }
 
-    // Method to parse a CSV line into an array of strings
+    // Method to parse a TXT line into an array of strings
     String[] parseTXTLine(String line) {
         List<String> parts = new ArrayList<>();
         StringBuilder currentPart = new StringBuilder();

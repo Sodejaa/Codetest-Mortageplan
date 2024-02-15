@@ -22,10 +22,9 @@ public class MortgagePlanTest {
 
     @Test
     void testCalculateMonthlyPayments() {
-        // Given
+
         MortagePlan mortagePlan = new MortagePlan("prospects.txt");
 
-        // When
         List<Prospect> prospects = mortagePlan.prospects;
         // Create a sample prospect
         Prospect prospect = new Prospect("Test Prospect", 100000, 5.0f, 20);
@@ -58,11 +57,11 @@ public class MortgagePlanTest {
         System.setOut(originalOut);
 
         // Assert output matches expectations
-        String actualOutput = outContent.toString().trim(); // Trim added to remove any leading or trailing whitespace
+        String actualOutput = outContent.toString().trim(); // Trim added to remove any leading or trailing whitespace and same for the expectedOutput
         String expectedOutput = String.format(
                 "****************************************************************************************************\n" +
                         "Prospect 1: Test Prospect wants to borrow 100000.0 € for a period of 20 years and pay 659.96 € each month\n" +
-                        "****************************************************************************************************\n").trim(); // Added newline character at the end
+                        "****************************************************************************************************\n").trim();
 
         assertEquals(expectedOutput, actualOutput);
     }

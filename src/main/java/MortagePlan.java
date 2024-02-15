@@ -48,7 +48,7 @@ public class MortagePlan {
         // Calculate monthly payments for the prospect
         double monthlyPayments = calculateMonthlyPayments(prospect);
 
-        // Print details of the prospect
+        // Print details of the prospect, cutted way the unnecessary decimals for the monthly payments
         System.out.println("****************************************************************************************************\n" +
                 "Prospect " + (index + 1) + ": " + prospect.getName() +
                 " wants to borrow " + prospect.getLoanAmount() + " € " +
