@@ -19,7 +19,7 @@ public class ProspectParser {
             // Read each line of the file
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                String[] parts = parseCSVLine(line); // Parse Comma-separated values line into parts
+                String[] parts = parseTXTLine(line); // Parse Comma-separated values line into parts
                 if (parts.length == 4) {
                     // Extract and trim each part
                     String name = parts[0].trim();
@@ -43,7 +43,7 @@ public class ProspectParser {
     }
 
     // Method to parse a CSV line into an array of strings
-    private String[] parseCSVLine(String line) {
+    String[] parseTXTLine(String line) {
         List<String> parts = new ArrayList<>();
         StringBuilder currentPart = new StringBuilder();
         boolean inQuotes = false;
